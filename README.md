@@ -79,6 +79,32 @@ To stop the development server, use the key combination:
 
     Ctrl + C
 
+## Syntax highlighting styles
+
+Code block syntax highlighting uses styles supported by [Pygments](https://pygments.org/).
+
+### Default styles used in the manual
+
+- `default` for light mode
+- `lightbulb` for dark mode
+
+### Applying desired styles
+
+Enter the `/assets` directory and generate the CSS file:
+
+    cd doc/manual/docs/assets
+    generate_highlight_css.py <mode> <style>
+
+Where:
+
+- `<mode>` is `light` or `dark`
+- `<style>` is a Pygments style name
+
+### Examples
+
+    generate_highlight_css.py light default
+    generate_highlight_css.py dark lightbulb
+
 ## Getting help
 
 If you need guidance or help with getting started with contributing (or have a suggestion or would like to discuss about the manual),
