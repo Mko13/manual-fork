@@ -102,6 +102,9 @@ Where:
 
 ### Examples
 
+    (!) TODO: Make the script work on Windows, OT
+    py generate_highlight_css.py ...
+
     generate_highlight_css.py light default
     generate_highlight_css.py dark lightbulb
 
